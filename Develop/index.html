@@ -1,0 +1,27 @@
+import { useLocation } from 'react-router-dom';
+
+const CandidateSearch = () => {
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+  const searchTerm = query.get('search') || ''; // Example of getting a query parameter
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A candidate search application to find and save potential candidates." />
+    <meta property="og:title" content="Candidate Search" />
+    <meta property="og:description" content="Find and save candidates for your hiring needs." />
+    <meta property="og:image" content="/path/to/image.jpg" /> <!-- Update with actual image path -->
+    <meta property="og:url" content="http://yourwebsite.com" /> <!-- Update with actual URL -->
+    <title>Candidate  Search</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+};
